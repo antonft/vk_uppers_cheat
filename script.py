@@ -9,7 +9,7 @@ def sha256(str):
 
 
 def sign_gen(a,b):
-    step1= f"leaderboard{120}{a ^ b}ping"
+    step1 = f"leaderboard{120}{a ^ b}ping"
     step2 = sha256(step1)
     return sha256(step2+'catalog')
 
