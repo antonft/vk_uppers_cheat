@@ -14,8 +14,8 @@ def sign_gen(a,b):
     return sha256(step2+'catalog')
 
 
-USER_ID = argv[0]
-AUTH_ID = argv[1]
+USER_ID = argv[1]
+AUTH_ID = argv[2]
 URL_START = 'https://beeline-uppers.ru-prod2.kts.studio/api/game/start'
 URL_FINISH = 'https://beeline-uppers.ru-prod2.kts.studio/api/game/finish'
 AUTH = {'Authorization':f'Bearer {AUTH_ID}'}
